@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="providerone" />
+        <module name="server" />
+        <module name="consumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer" target="1.8" />
+      <module name="MyClound" target="1.8" />
+      <module name="providerone" target="1.8" />
+      <module name="server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MyClound" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="providerone" options="-parameters" />
+      <module name="server" options="-parameters" />
+    </option>
+  </component>
+</project>
